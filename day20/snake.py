@@ -6,6 +6,7 @@ RIGHT = 0
 UP = 90
 DOWN = 270
 
+
 class Snake:
     def __init__(self, body_length: int = 3):
         self.segments: list[Turtle] = []
