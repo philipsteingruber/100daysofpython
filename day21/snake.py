@@ -16,9 +16,10 @@ class Snake:
             self.segments.append(turtle)
         self.head = self.segments[0]
 
-    def create_segment(self) -> Turtle:
-        turtle = Turtle('square')
-        turtle.color('white')
+    @staticmethod
+    def create_segment() -> Turtle:
+        turtle = Turtle("square")
+        turtle.color("white")
         turtle.penup()
         return turtle
 

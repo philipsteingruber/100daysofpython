@@ -1,6 +1,7 @@
-import colorgram
-from turtle import Turtle, Screen
 import random
+from turtle import Turtle, Screen
+
+import colorgram
 
 rgb_colors = []
 colors = colorgram.extract('image.jpg', 30)
@@ -24,8 +25,6 @@ for i in range(10):
     for j in range(10):
         turtle.dot(25, random.choice(rgb_colors))
         turtle.setx(step * (j+1))
-
-
 
 
 screen.exitonclick()

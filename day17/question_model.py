@@ -4,4 +4,4 @@ class Question:
         self.answer = answer
 
     def __repr__(self):
-        return f'{self.text} - {self.answer}'
+        return f"{self.text} - {self.answer}"

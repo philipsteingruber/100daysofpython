@@ -4,9 +4,9 @@ class QuizBrain:
         self.question_id = 0
         self.score = 0
 
-    def next_question(self) -> str:
+    def next_question(self) -> None:
         question = self.questions_list[self.question_id]
-        user_answer = input(f'{self.question_id + 1}: {question.text} - (True/False) ')
+        user_answer = input(f"{self.question_id + 1}: {question.text} - (True/False) ")
         self.check_answer(user_answer, question.answer)
         self.question_id += 1
 
@@ -17,7 +17,7 @@ class QuizBrain:
         answer_is_correct = user_answer.casefold() == correct_answer.casefold()
         if answer_is_correct:
             self.score += 1
-            print('Correct!')
+            print("Correct!")
         else:
-            print('Incorrect!')
+            print("Incorrect!")
         return answer_is_correct

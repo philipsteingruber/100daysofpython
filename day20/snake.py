@@ -11,8 +11,8 @@ class Snake:
     def __init__(self, body_length: int = 3):
         self.segments: list[Turtle] = []
         for i in range(body_length):
-            turtle = Turtle('square')
-            turtle.color('white')
+            turtle = Turtle("square")
+            turtle.color("white")
             turtle.penup()
             turtle.setx(-(20 * i))
             self.segments.append(turtle)
